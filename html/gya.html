@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0
+    Transitional//EN" "http://wwww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://wwww.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <title> Floralab </title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" conetnt="text/html; charset=UTF-8" />
+    <meta name="viewport" con tent="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/blog.css" />
+    <link rel="icon" type="image/icon" href="../imagenes/logo.png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/ec82bc03cd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- EMPIEZA EL HEADER-->
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">Flora<span>Lab</span></a>
+        <nav class="navbar">
+            <a href="../index.html #home">Principal</a>
+            <a href="../index.html #about">Acerca de</a>
+            <a href="../index.html #products">Servicios</a>
+            <a href="../index.html #contact">Contacto</a>
+            <a href="../index.html #trabajo">Nuestro trabajo</a>
+            <a href="../index.html #ubi">Nos ubicamos en</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#contact" class="fas fa-user"></a>
+        </div>
+    </header>
+    <!--TERMINA LA SECCION DEL HEADER-->
+
+
+    <section class="about" id="about">
+        <h1 class="heading">‎</h1>
+
+
+        <div class="row">
+
+            <div class="videocontainer">
+                <video src="../imagenes/TYO.mp4" loop autoplay muted></video>
+            </div>
+
+            <div class="content">
+                <h3>Tatiana y Octavio</h3>
+                <h2>‎</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat mollitia voluptas aperiam
+                    dignissimos repudiandae est, recusandae molestiae neque qui ad quos placeat animi tempore nisi
+                    reiciendis culpa possimus consequuntur odit consectetur hic ratione nihil, consequatur sit! Ratione
+                    enim, ad doloribus inventore molestias nulla. Minima facilis ipsam, rem consectetur repellendus
+                    dignissimos sapiente deserunt nemo non sit corrupti dolor esse. Sed cupiditate nihil error mollitia
+                    magni praesentium expedita consectetur sapiente reiciendis adipisci ex eligendi temporibus quam
+                    obcaecati natus distinctio ipsum veritatis qui ab libero, totam quo omnis quis. Expedita excepturi,
+                    aliquam non libero placeat veniam unde similique, molestias ad pariatur incidunt quisquam!
+
+                </p>
+
+
+
+            </div>
+
+            <div class="container">
+                <div class="image-container">
+                    <div class="image"><img src="../imagenes/proceso/p5.png" alt=""></div>
+                    <div class="image"><img src="../imagenes/proceso/p1.jpg" alt=""></div>
+                    <div class="image"><img src="../imagenes/proceso/p2.png" alt=""></div>
+                    <div class="image"><img src="../imagenes/proceso/p3.png" alt=""></div>
+                    <div class="image"><img src="../imagenes/proceso/p4.png" alt=""></div>
+                    <div class="image"><img src="../imagenes/proceso/p5.png" alt=""></div>
+                    <div class="image"><img src="../imagenes/proceso/p5.png" alt=""></div>
+                    <div class="image"><img src="../imagenes/proceso/p5.png" alt=""></div>
+                    <div class="image"><img src="../imagenes/proceso/p5.png" alt=""></div>
+                </div>
+                <div class="popup-image">
+                    
+                    <img src="../imagenes/proceso/p5.png">
+                    <span>&times;</span>
+                </div>
+                <div class="caja">
+                    <a href="../index.html #trabajo" class="btn">Volver</a>
+                </div>
+            </div>
+
+            <script>
+                document.querySelectorAll('.image-container img').forEach(image => {
+                    image.onclick = () => {
+                        document.querySelector('.popup-image').style.display = 'block';
+                        document.querySelector('.popup-image img').src = image.getAttribute('src');
+                    }
+                });
+        
+                document.querySelector('.popup-image span').onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'none';
+                }
+            </script>
+    </section>
+ 
+ 
+
+    <!--EMPIEZA LA SECCION DEL FOOTER-->
+    <footer>
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Links de acceso rapido</h3>
+                    <a href="../index.html #home">Principal</a>
+                    <a href="../index.html #about">Acerca de</a>
+                    <a href="../index.html #products">Servicios</a>
+                    <a href="../index.html #contact">Contacto</a>
+                    <a href="../index.html #trabajo">Nuestro trabajo</a>
+                    <a href="../index.html #ubi">Nos ubicamos en</a>
+                </div>
+
+                <div class="box">
+                    <h3>Info de contacto</h3>
+                    <div class="icons2-container">
+                        <div class="icons2">
+                            <a href="https://www.instagram.com/floralab.mx/">
+                                <img src="../floralab/imagenes/mensaje_enviado/instagram.png">Instagram: @floralab.mx
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="icons2-container">
+                        <div class="icons2">
+                            <a href="contacto@floralab.mx">
+                                <img src="../floralab/imagenes/mensaje_enviado/correo.png">Correo: contacto@floralab.mx
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="icons2-container">
+                        <div class="icons2">
+                            <a href="#">
+                                <img src="../floralab/imagenes/mensaje_enviado/whatsapp.png">Whatsapp: 777#######
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="icons2-container">
+                        <div class="icons2">
+                            <a href="https://www.facebook.com/floralabmx/">
+                                <img src="../floralab/imagenes/mensaje_enviado/facebook.png">Facebook: FloraLab
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="credits">Creada y diseñada por <span>Emiliano Aviles Sanchez</span></div>
+        </section>
+    </footer>
+    <!--TERMINA LA SECCION DEL FOOTER-->
+
+</html>
